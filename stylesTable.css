@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    
+}
+
+th {
+   padding: 20px; 
+}
+
+td {
+    padding: 10px;
+    
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+table, th, td {
+    border: 3px ridge black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(138, 141, 141, 0.616);
+}
+
+tr:nth-child(n+3) :not(td:nth-child(-n+2)) {
+    background-color: rgba(240, 108, 14, 0.257);
+}
+
+
+tr:hover :not(th,td:nth-child(-n+2) ) {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.points-header {
+    text-align: center;
+    font-size: 2rem;
+}
